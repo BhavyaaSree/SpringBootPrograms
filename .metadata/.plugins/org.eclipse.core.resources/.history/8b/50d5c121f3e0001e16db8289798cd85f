@@ -1,0 +1,6 @@
+package com.sathya.springex;
+
+public class Greeting {
+
+		public void greet();
+}

@@ -1,0 +1,24 @@
+package com.sathya.springex;
+
+public class Person {
+	
+	
+	private HomeloanService homeloanService;
+	private RealstateService realstateService;
+	
+	
+	/*public Person(HomeloanService homeloanService, RealstateService realstateService) {
+	 	super();
+		this.homeloanService = homeloanService;
+		this.realstateService = realstateService;
+	}*/
+	
+	public void details() {
+		homeloanService.loanInfo();
+		realstateService.realstateInfo();
+		
+	}
+	
+	
+
+}

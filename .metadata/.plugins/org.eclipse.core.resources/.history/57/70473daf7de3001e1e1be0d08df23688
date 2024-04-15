@@ -1,0 +1,15 @@
+package com.sathya.springex;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	//start the container
+        ApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.classY);
+        
+        
+        // getting the object
+         Patient patient= context.getBean("patient",Patient.class);
+         patient.details();
+}
+}

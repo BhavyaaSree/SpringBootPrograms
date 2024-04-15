@@ -1,0 +1,14 @@
+package com.sathya.springex;
+
+public class EmailService implements MessageService {
+
+	@Override
+	public void message() {
+		
+	
+		System.out.println("your email is ready");
+		System.out.println("check once your email");
+		
+	}
+
+}

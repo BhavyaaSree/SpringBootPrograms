@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="pink">
+	<h1> Spring Boot first Example</h1>
+	<h2> Tinku is a handsome boy</h2>
+</body>
+</html>

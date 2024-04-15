@@ -1,0 +1,37 @@
+package com.sathya.springex;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class JavaConfig {
+	
+	@Bean
+
+	  public Doctor doctor() {
+
+	    Doctor doctor = new Doctor(101, "Deepika");
+	    return doctor;
+
+	  }
+
+	  @Bean
+
+	  public Phamarcy phamarcy() {
+
+	    Phamarcy phamarcy = new Phamarcy("Apolo", "Hyderabad");
+	    return phamarcy;
+	  }
+
+	  @Bean
+	  public Patient patient() {
+
+	    Patient patient = new Patient("navya", 24, doctor(), phamarcy());
+	    return patient;
+
+	  }
+		
+	}
+	
+	
+
+

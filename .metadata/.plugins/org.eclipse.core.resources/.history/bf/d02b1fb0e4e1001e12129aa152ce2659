@@ -1,0 +1,23 @@
+package com.sathya.springex;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+       //start the container
+    	ApplicationContext context = new  AnnotationConfigApplicationContext(JavaConfig.class);
+    	
+    	//getting the object
+    	Person person1=context.getBean("T",Person.class);
+    	person1.personInfo();
+    	
+    	System.out.println("**********");
+    	
+    	Person person2=context.getBean("person2",Person.class);
+    	person2.personInfo();
+    	
+    }
+}
